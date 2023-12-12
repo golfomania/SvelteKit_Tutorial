@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div>
+	<h1>Welcome</h1>
+	<a href="/guides">View Guides</a>
+	<a href="/about">About</a>
+</div>
+
+<style>
+	div {
+		text-align: center;
+	}
+	a {
+		display: inline-block;
+		margin: 20px auto;
+		width: 75%;
+		max-width: 300px;
+		padding: 10px;
+		border: 1px dotted rgba(255, 255, 255, 0.2);
+		text-align: center;
+	}
+</style>
