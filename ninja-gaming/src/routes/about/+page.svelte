@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <div class="about">
 	<h4>About us</h4>
 	<p>

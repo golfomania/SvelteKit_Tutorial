@@ -1,7 +1,19 @@
+<script>
+	import { onMount } from 'svelte';
+
+	export let guides = [];
+	onMount(async () => {
+		const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+		const guides = await res.json();
+		console.log(guides);
+	});
+</script>
+
 <div class="guides">
 	<ul>
-		<li><a href="/">guide 1</a></li>
-		<li><a href="/">guide 2</a></li>
+		{#each guides as guide}
+			<li><a href="/">{guide.title}</a></li>
+		{/each}
 	</ul>
 </div>
 

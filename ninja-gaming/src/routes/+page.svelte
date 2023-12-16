@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <div>
 	<h1>Welcome</h1>
 	<a href="/guides">View Guides</a>
